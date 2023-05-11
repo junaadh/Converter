@@ -18,17 +18,21 @@ public class App
             case "y":
                 System.out.println("Insert binary number: ");
                 String bin = sc.nextLine();
+                sc.close();
                 System.out.println(ComputeMethods.binToDec(bin));
                 break;
             case "n":
                 System.out.println("Insert decimal number: ");
                 int dec = sc.nextInt();
+                sc.close();
                 System.out.println(ComputeMethods.decToBin(dec));
                 break;
 
             default:
+                sc.close();
                 throw new IllegalStateException("invalid input please select the correct operation");
         }
+        
         
         //throw new IllegalStateException("unexpected error");
     }
