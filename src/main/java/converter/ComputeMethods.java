@@ -31,8 +31,8 @@ public class ComputeMethods {
     }
 
     public static long decToBin(String dec) {
-        int remainder = 0, i = 1;
-        int decimal = Integer.parseInt(dec);
+        long remainder = 0, i = 1;
+        long decimal = Integer.parseInt(dec);
         long bin = 0;
         while (decimal != 0) {
             remainder = decimal % 2;
