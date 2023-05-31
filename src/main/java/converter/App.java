@@ -38,9 +38,6 @@ public class App {
                 Prompts.messageBox("Decimal number " + raw + " in binary is: ", title, num);
                 break;
 
-            default:
-                // sc.close();
-                throw new IllegalStateException("invalid input please select the correct operation");
         }
 
         // throw new IllegalStateException("unexpected error");
